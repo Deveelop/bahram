@@ -13,8 +13,8 @@ const Headers = () => {
       <img className=' w-[99px] h-[29px]' src='/logo.png' alt='Bahram'/>
       </div>
       <div className='flex gap-8'>
-        <FaBars/>
-        <FaSearch/>
+        <FaBars className=' cursor-pointer'/>
+        <FaSearch className=' cursor-pointer'/>
       </div>
       </div>
     </header>
