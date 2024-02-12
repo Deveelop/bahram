@@ -30,14 +30,14 @@ function Porpular() {
            
 
               <div className="bg-[#FFFFFF] items-center grid md:grid-cols-2 rounded-lg">
-                <div className=" p-5 md:pl-10">
+                <div className=" md:pl-10">
               <h1 className=" font-normal">{lists.serialNo}</h1>
               <h1 className=" font-semibold md:text-[28px]">{lists.title}</h1>
               <p className="text-[#9B9B9B] text-xs">{lists.subj}</p>
              </div>
 
              
-                <img className=" h-full md:rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
+                <img className=" h-[100%] md:rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
               
               </div>
            
