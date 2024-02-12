@@ -26,7 +26,7 @@ function Porpular() {
         <div>
         {
          Popularposts.map((lists) => {
-          return <div className=" pt-10 grid md:mb-10" key={lists.serialNo}>
+          return <div className=" grid md:mb-10" key={lists.serialNo}>
            
 
               <div className="bg-[#FFFFFF] shadow-md items-center grid md:grid-cols-2 rounded-lg">
@@ -37,7 +37,7 @@ function Porpular() {
              </div>
 
              
-                <img className=" rounded-b-lg :rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
+                <img className=" h-[100%] rounded-b-lg :rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
               
               </div>
            
