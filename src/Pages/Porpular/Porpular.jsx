@@ -29,15 +29,15 @@ function Porpular() {
           return <div className=" pt-10 grid md:mb-10" key={lists.serialNo}>
            
 
-              <div className="bg-[#FFFFFF] items-center grid md:grid-cols-2 rounded-lg">
-                <div className=" p-5 md:p-10">
+              <div className="bg-[#FFFFFF] shadow-md items-center grid md:grid-cols-2 rounded-lg">
+                <div className=" md:pl-10">
               <h1 className=" font-normal">{lists.serialNo}</h1>
               <h1 className=" font-semibold md:text-[28px]">{lists.title}</h1>
               <p className="text-[#9B9B9B] text-xs">{lists.subj}</p>
              </div>
 
              
-                <img className=" rounded-b-lg md:rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
+                <img className=" rounded-b-lg :rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
               
               </div>
            
