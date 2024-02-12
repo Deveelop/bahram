@@ -37,7 +37,7 @@ function Porpular() {
              </div>
 
              
-                <img className=" md:rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
+                <img className=" h-full md:rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
               
               </div>
            
