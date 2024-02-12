@@ -36,9 +36,9 @@ function Porpular() {
               <p className="text-[#9B9B9B] text-xs">{lists.subj}</p>
              </div>
 
-             
-                <img className=" h-[100%] rounded-b-lg :rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
-              
+             <div className="h-[100%] ">
+                <img className=" rounded-b-lg :rounded-r-lg" src={lists.url} alt={lists.serialNo}/>
+              </div>
               </div>
            
           </div>
