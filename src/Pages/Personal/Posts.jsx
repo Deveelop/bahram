@@ -12,12 +12,12 @@ const Posts = () => {
           <div className=" mt-10">
           <img className=" rounded-lg" src={posts.url} alt={posts.id}/>
           </div>
-          <div className=" flex gap-10 py-1 ">
+          <div className=" flex gap-2 md:gap-10 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-lg font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-sm  md:text-lg">{posts.author}</p>
+              <label className=" text-xs md:text-lg font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-lg">{posts.author}</p>
             </span>
             <span className="flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-lg font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-sm md:text-lg">{posts.category}</p>
+              <label className=" text-xs md:text-lg font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-xs md:text-lg">{posts.category}</p>
             </span>
           </div>
           <div>

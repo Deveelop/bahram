@@ -1,8 +1,21 @@
+
 import HeaderPorpular from "./HeaderPorpular"
 import Newsteller from "../../Components/Newsteller"
 import { Popularposts } from "../../Components/popularpost"
 import { ReadingLists } from "../../Components/readinglists"
-function Porpular() {
+import './popular.css'
+import  {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import {Navigation} from 'swiper/modules'
+import SwiperBtn from "./SwiperBtn"
+
+
+
+const Porpular = () => {
+
+
   return (
     <>
       <HeaderPorpular/>
@@ -50,19 +63,41 @@ function Porpular() {
             <h1 className=" text-2xl font-bold">Reading lists</h1>
             <a href="#" className=" text-[#FF5480]">View all</a>
           </div>
-          <div>{
-          ReadingLists.map((reads)=>{
-           return <div key={reads.id} className=" ">
+          <div>
+          <Swiper
+        modules={[Navigation]} 
+         spaceBetween={15}
+         slidesPerView={4}
+        
+        
+         onSlideChange={()=> console.log('slide change')}
+         onSwiper={(swiper)=> console.log({swiper})}
+         className="flex relative"
+         >
+          <div>
+         {
+           ReadingLists.map((reads)=>{
+            return <SwiperSlide key={reads.id} className="">
+            
+               <div className="">
+                <img className=" rounded-lg" src={reads.url} alt={reads.id}/>
+               <h1 className=" text-center font-semibold">{reads.title}</h1>
+               </div>
+               </SwiperSlide>
            
-              <div className="grid grid-cols-4">
-               <img className="" src={reads.url} alt={reads.id}/>
-              <h1>{reads.title}</h1>
-              </div>
-              </div>
+           
+           })
+         }
+         </div>
+         
           
           
-          })
-          }</div>
+          <div className=" z-50 absolute top-20 left-40">
+          <SwiperBtn />
+          </div>
+        
+         </Swiper>
+          </div>
         </div>
       </div>
       <Newsteller/>
