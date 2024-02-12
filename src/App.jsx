@@ -1,14 +1,20 @@
-import Headers from "./Components/Headers"
+
 import Footer from "./Components/Footer"
-import Posts from "./Components/Posts"
+import Posts from "./Pages/Personal/Posts"
+import Porpular from "./Pages/Porpular/Porpular"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 const App = () => {
   return (
     <>
-   
-      <Headers/>
-      <Posts/>
+   <BrowserRouter>
+     
+      <Routes>
+      <Route exact path="/" element={<Posts/>}/>
+      <Route exact path="/porpular" element={<Porpular/>}/>
+      </Routes>
+    
       <Footer/>
-  
+  </BrowserRouter>
     </>
   )
 }
