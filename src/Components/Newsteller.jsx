@@ -7,7 +7,7 @@ function Newsteller() {
 
     <div className=" md:w-[723px] ">
     <h1 className=" md:text-5xl font-bold text-2xl font-OpenSans">Get free web design insights...</h1>
-    <p className=" font-semibold md:mt-5 md:text-xl">In your inbox, every other week. And unsubscribe in a click, if you want.</p>
+    <p className=" font-semibold md:mt-5 text-sm md:text-xl">In your inbox, every other week. And unsubscribe in a click, if you want.</p>
     </div>
 
     <div className=" mt-10 md:mt-16">

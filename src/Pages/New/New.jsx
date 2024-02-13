@@ -21,7 +21,7 @@ const New = () => {
         <div className="grid md:grid-cols-2 gap-5">
         {
       NewPostsArray.map( (posts) => {
-        return <div className=" w-[100%]  m-auto" key={posts.id}>
+        return <div className="" key={posts.id}>
           <div className=" mt-10">
           <img className=" rounded-lg" src={posts.url} alt={posts.id}/>
           </div>
@@ -45,7 +45,7 @@ const New = () => {
        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {
          AllTopicsArray.map((lists) => {
-         return <div className=" h-[146px] rounded-md bg-[#FFFFFF]" key={lists.id}>
+         return <div className=" h-[146px] shadow-lg rounded-md bg-[#FFFFFF]" key={lists.id}>
           <div className=" items-center place-content-center w-full h-full flex">
             <img className="h-[23px]" src={lists.icon} alt={lists.id}/>
             <h1 className="pl-4">{lists.topic}</h1>
