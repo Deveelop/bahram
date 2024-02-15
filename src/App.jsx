@@ -3,6 +3,8 @@ import Footer from "./Components/Footer"
 import Posts from "./Pages/Personal/Posts"
 import Porpular from "./Pages/Porpular/Porpular"
 import New from "./Pages/New/New"
+import ReadLists from "./Pages/Allreadings/ReadLists"
+import Topics from "./Pages/Topics/Topics"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Route exact path="/" element={<Posts/>}/>
       <Route exact path="/porpular" element={<Porpular/>}/>
       <Route exact path="/new" element={<New/>}/>
+      <Route exact path="/reading-lists" element={<ReadLists/>}/>
+      <Route exact path="/topics" element={<Topics/>}/>
       </Routes>
     
       <Footer/>

@@ -13,8 +13,8 @@ const HeaderNew = () => {
        <Link to='/porpular' className=' font-semibold'>Popular</Link>
        <Link to='/new'><button className=' w-[78px] h-[35px]  font-semibold text-white  rounded-lg bg-[#FF5480]'>New</button></Link>
 
-        <a href='#' className=' font-semibold'>Reading list</a>
-        <a href='#' className=' font-semibold'>Topics</a>
+        <Link to='/reading-lists' className=' font-semibold'>Reading list</Link>
+        <Link to='/topics' className=' font-semibold'>Topics</Link>
         <a href='#' className=' font-semibold'>Subscribe</a>
       </nav>
       <div className='flex gap-8'>

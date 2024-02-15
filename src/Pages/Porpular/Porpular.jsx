@@ -42,7 +42,7 @@ const Porpular = () => {
           return <div className=" pt-10 grid md:mb-10" key={lists.serialNo}>
            
 
-              <div className="bg-[#FFFFFF] items-center grid md:grid-cols-2 rounded-lg">
+              <div className="bg-[#FFFFFF] shadow-sm shadow-gray-500 items-center grid md:grid-cols-2 rounded-lg">
                 <div className=" ">
               <h1 className=" font-normal pl-5">{lists.serialNo}</h1>
               <h1 className=" font-semibold pl-5 md:text-[28px]">{lists.title}</h1>

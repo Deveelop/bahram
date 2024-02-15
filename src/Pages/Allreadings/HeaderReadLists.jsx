@@ -1,7 +1,6 @@
-
 import {FaSearch, FaBars} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
-const HeaderPorpular = () => {
+const HeaderReadLists = () => {
   return (
     <header className=' bg-[#FFFFFF] '>
       
@@ -10,8 +9,9 @@ const HeaderPorpular = () => {
       <img className=' w-[99px] h-[29px]' src='/logo.png' alt='Bahram'/>
       </div>
       <nav className=' hidden md:flex gap-8 items-center'>
-        <a href='/popular' className=' font-semibold'>Popular</a>
-       <Link to='/new'> <button className=' w-[78px] h-[35px]  font-semibold text-white  rounded-lg bg-[#FF5480]'>New</button></Link>
+       <Link to='/porpular' className=' font-semibold'>Popular</Link>
+       <Link to='/new'><button className=' w-[78px] h-[35px]  font-semibold text-white  rounded-lg bg-[#FF5480]'>New</button></Link>
+
         <Link to='/reading-lists' className=' font-semibold'>Reading list</Link>
         <Link to='/topics' className=' font-semibold'>Topics</Link>
         <a href='#' className=' font-semibold'>Subscribe</a>
@@ -25,4 +25,4 @@ const HeaderPorpular = () => {
   )
 }
 
-export default HeaderPorpular;
+export default HeaderReadLists;

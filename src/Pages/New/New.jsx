@@ -36,7 +36,7 @@ const New = () => {
           <div>
             <h1 className=" font-bold md:text-2xl">{posts.title}</h1>
           </div>
-          <p className="text-[#9B9B9B] text-xs">{posts.subj}</p>
+          <p className="text-[#9B9B9B] py-4 text-xs">{posts.subj}</p>
         </div>
       })
      }
@@ -45,10 +45,10 @@ const New = () => {
        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {
          AllTopicsArray.map((lists) => {
-         return <div className=" h-[146px] shadow-lg rounded-md bg-[#FFFFFF]" key={lists.id}>
-          <div className=" items-center place-content-center w-full h-full flex">
-            <img className="h-[23px]" src={lists.icon} alt={lists.id}/>
-            <h1 className="pl-4">{lists.topic}</h1>
+         return <div className=" h-[100px] md:h-[146px] shadow-sm rounded-md shadow-gray-500 bg-[#FFFFFF]" key={lists.id}>
+          <div className="  items-center place-content-center w-full h-full flex">
+            <img className=" h-[15px] md:h-[23px]" src={lists.icon} alt={lists.id}/>
+            <h1 className=" text-xs pl-1 md:pl-4">{lists.topic}</h1>
           </div>
          </div>
          })
