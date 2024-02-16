@@ -6,6 +6,7 @@ import New from "./Pages/New/New"
 import ReadLists from "./Pages/Allreadings/ReadLists"
 import Topics from "./Pages/Topics/Topics"
 import PostsPage from "./Pages/Posts/PostsPage"
+import TomasLau from "./Pages/Users/TomasLau"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Route exact path="/reading-lists" element={<ReadLists/>}/>
       <Route exact path="/topics" element={<Topics/>}/>
       <Route exact path="/posts-page" element={<PostsPage/>}/>
+      <Route exact path="/user-tomas" element={<TomasLau/>}/>
       </Routes>
     
       <Footer/>

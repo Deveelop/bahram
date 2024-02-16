@@ -78,7 +78,7 @@ const Porpular = () => {
            ReadingLists.map((reads)=>{
             return <SwiperSlide key={reads.id} className="">
             
-               <div className="">
+               <div className=" h-[225px]">
                 <img className=" rounded-lg" src={reads.url} alt={reads.id}/>
                <h1 className=" text-center font-semibold">{reads.title}</h1>
                </div>
@@ -91,7 +91,7 @@ const Porpular = () => {
          
           
           
-          <div className=" z-50 absolute top-20 left-40">
+          <div className=" z-50 absolute right-0">
           <SwiperBtn />
           </div>
         

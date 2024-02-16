@@ -1,6 +1,7 @@
 import HeaderPosts from "./HeaderPosts"
 import { FaEye, FaHeart} from 'react-icons/fa'
-function PostsPage() {
+
+const PostsPage = () => {
   return (
     <>
      <HeaderPosts/>
@@ -108,12 +109,12 @@ function PostsPage() {
           <div className=" mt-10">
           <img className=" rounded-lg" src='/dsb1.png' alt='posts'/>
           </div>
-          <div className=" flex gap-10 py-1 ">
-            <span className=" flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-sm  md:text-sm">TOMAS LAURINAVICUS</p>
+          <div className=" flex gap-5 py-1 ">
+            <span className=" flex text-nowrap gap-1 md:gap-1">
+              <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
-            <span className="flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-sm md:text-sm">DESIGN PROCESS</p>
+            <span className="flex text-nowrap gap-1 md:gap-1">
+              <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-xs md:text-xs">DESIGN PROCESS</p>
             </span>
           </div>
           <div>
@@ -125,12 +126,12 @@ function PostsPage() {
           <div className=" mt-10">
           <img className=" rounded-lg" src='/dsb2.png' alt='posts'/>
           </div>
-          <div className=" flex gap-10 py-1 ">
-            <span className=" flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-sm  md:text-sm">TOMAS LAURINAVICUS</p>
+          <div className=" flex gap-5 py-1 ">
+            <span className=" flex text-nowrap gap-1 md:gap-1">
+              <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
-            <span className="flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-sm md:text-sm">DESIGN PROCESS</p>
+            <span className="flex text-nowrap gap-1 md:gap-1">
+              <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-xs md:text-xs">DESIGN PROCESS</p>
             </span>
           </div>
           <div>
@@ -154,55 +155,78 @@ function PostsPage() {
         <div className=" border-b  border-gray-200 w-[60%] m-auto mb-20 mt-10">
 
           <div>
-            <div className="flex justify-between">
-              <h1>Comments</h1>
-              <button>Leave a Comment</button>
+            <div className="flex justify-between pb-10 items-center">
+              <h1 className=" font-semibold">Comments</h1>
+              <div>
+              <button className="  w-[150px] h-[50px] rounded-lg font-semibold border border-[#FF5480] text-[#FF5480]">Leave a Comment</button>
+              </div>
             </div>
             <p><span>Comment policy:</span> We love comments and appreciate the time that readers spend to share ideas and give feedback. However, all comments are manually moderated and those deemed to be spam or solely promotional will be deleted.</p>
           </div>
 
-        
+       
 
-          <div>
+          <div className=" mt-20">
           <div className='grid grid-cols-1 grid-cols-50'>
-          <div className='flex justify-between'>
-          <img className=' w-[40px] rounded-[50px]' src='/profile2.png' alt='profile'/>
-          <h1>Brian Jackson</h1>
-          <h1>December 14, 2017 at 5:13 pm</h1>
-          <button>Reply</button>
+          <div className='flex justify-between '>
+            <div className=" flex gap-5 ">
+          <img className=' w-[50px] rounded-[50px]' src='/profile2.png' alt='profile'/>
+          <h1 className="">Brian Jackson</h1>
           </div>
-          <div className=''>
-        <p className=' mb-1'>I think, you forgot to mention a very good one:
+          <div>
+          <h1 className=" text-[#9B9B9B]">December 14, 2017 at 5:13 pm</h1>
+          </div>
+          <div className="">
+          <button className=" text-[#9B9B9B] border h-[51px] w-[90px] rounded-lg">Reply</button>
+          </div>
+          </div>
+          <div className=' mt-5'>
+        <p className=' ml-14'>I think, you forgot to mention a very good one:
 Thrive architect from thrivethemes. That thing is pretty powerful.</p>
           </div>
         </div>
            </div>
 
-          <div className=" w-[80%] m-auto pb-10">
-          <div className='grid grid-cols-1 grid-cols-50'>
-          <div className='flex justify-between'>
-          <img className=' w-[40px] rounded-[50px]' src='/profile3.png' alt='profile'/>
-          <h1>Sean Scott</h1>
-          <h1>December 14, 2017 at 5:13 pm</h1>
+          <div className=" w-[85%] m-auto pb-10">
+          <div className='grid grid-cols-1 grid-cols-50 mt-10'>
+          <div className='flex justify-between '>
+            <div className=" flex gap-5 ">
+          <img className=' w-[50px] rounded-[50px]' src='/profile3.png' alt='profile'/>
+          <h1 className="">Sean Scott</h1>
           </div>
-          <div className=''>
-        <p className=' mb-1'>Thanks Brian! We have updated the above post. You are correct, their page builder has both a free and a premium version.</p>
+          <div>
+          <h1 className=" text-[#9B9B9B]">December 14, 2017 at 5:13 pm</h1>
+          </div>
+          <div className="">
+          
+          </div>
+          </div>
+          <div className=' mt-5'>
+        <p className=' ml-14'> Thanks Brian! We have updated the above post. You are correct, their page builder has both a free and a premium version.</p>
           </div>
         </div>
         </div>
 
+       
+
         </div>
         <div className=" border-b  border-gray-200 w-[60%] m-auto mb-20 mt-10">
         <div className="pb-10">
-          <div className='grid grid-cols-1 grid-cols-50'>
-          <div className='flex justify-between'>
-          <img className=' w-[40px] rounded-[50px]' src='/profile4.png' alt='profile'/>
-          <h1>William Hilton</h1>
-          <h1>December 14, 2017 at 5:13 pm</h1>
-          <button>Reply</button>
+        <div className='grid grid-cols-1 grid-cols-50'>
+          <div className='flex justify-between '>
+            <div className=" flex gap-5 ">
+          <img className=' w-[50px] rounded-[50px]' src='/profile4.png' alt='profile'/>
+          <h1 className="">Wiliam Hilton</h1>
           </div>
-          <div className=''>
-        <p className=' mb-1'>I think, you forgot to mention a very good one:
+          <div>
+          <h1 className=" text-[#9B9B9B]">December 14, 2017 at 5:13 pm</h1>
+          </div>
+          <div className="">
+          <button className=" text-[#9B9B9B] border h-[51px] w-[90px] rounded-lg">Reply</button>
+          </div>
+          </div>
+          <div className=' mt-5'>
+        <p className=' ml-14'>I think, you forgot to mention a very good one:
 Thrive architect from thrivethemes. That thing is pretty powerful.</p>
           </div>
         </div>

@@ -2,6 +2,7 @@ import HeaderNew from "./HeaderNew"
 import Newsteller from "../../Components/Newsteller"
 import { NewPostsArray } from "../../Components/newpostarray"
 import { AllTopicsArray } from "../../Components/alltopicsarray"
+import { Link } from "react-router-dom"
 
 const New = () => {
   return (
@@ -27,7 +28,7 @@ const New = () => {
           </div>
           <div className=" flex gap-10 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-3">
-              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-sm  md:text-sm">{posts.author}</p>
+              <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">BY</label><Link to='/user-tomas'><p className=" text-[#000000] text-sm  md:text-sm">{posts.author}</p></Link>
             </span>
             <span className="flex text-nowrap gap-1 md:gap-3">
               <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]"> IN</label><p className=" text-[#000000] text-sm md:text-sm">{posts.category}</p>
