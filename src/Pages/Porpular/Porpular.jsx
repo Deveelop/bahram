@@ -3,7 +3,6 @@ import HeaderPorpular from "./HeaderPorpular"
 import Newsteller from "../../Components/Newsteller"
 import { Popularposts } from "../../Components/popularpost"
 import { ReadingLists } from "../../Components/readinglists"
-import './popular.css'
 import  {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';

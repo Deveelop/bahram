@@ -20,7 +20,7 @@ const Topics = () => {
         {
          AllTopicsArray.map((lists) => {
          return <div key={lists.id}>
-            <div className=" p-4 md:p-8  flex flex-col shadow-sm rounded-md shadow-gray-500 bg-[#FFFFFF]">
+            <div className=" p-4 md:p-8  flex flex-col shadow-sm max-h-[250px] rounded-md shadow-gray-500 bg-[#FFFFFF]">
                 <div className=" flex p-4">
              <img src={lists.icon} alt={lists.id}/>
              <h1 className=" pl-2 md:pl-4 font-semibold">{lists.topic}</h1>

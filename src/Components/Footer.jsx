@@ -1,4 +1,4 @@
-import { BsInstagram, BsFacebook, BsTwitter, BsPinterest, } from 'react-icons/bs'
+// import { BsInstagram, BsFacebook, BsTwitter, BsPinterest, } from 'react-icons/bs'
 const Footer = () => {
     return(
         <footer className=" h-[100px] bg-[#FFFFFF]">
@@ -8,7 +8,7 @@ const Footer = () => {
       <img className=" opacity-30 hover:opacity-60" src="/logo.png" alt="bahram"/>
       </div>
 
-      <div className="socilas">
+   
       <div className="flex justify-center gap-x-8 col-span-3 md:col-span-1 py-2 mt-8 md:mt-0">
            <a className="" href="http://" target="_blank" rel="noopener noreferrer"> <img src="/Vk.png"/> </a>
           <a className=" " href="http://" target="_blank" rel="noopener noreferrer"> <img src="/Pinterest.png"/> </a>
@@ -23,7 +23,7 @@ const Footer = () => {
           <a className=" opacity-30 hover:opacity-60" href="http://" target="_blank" rel="noopener noreferrer"> <BsPinterest size={25} /> </a> */}
 
     </div> 
-      </div>
+   
 
       <div className=" text-center">
       <p className=" text-gray-500">
