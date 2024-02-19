@@ -11,6 +11,7 @@ import FreelanceBlog from "./Pages/Freelance/FreelanceBlog"
 import ProfessionalBlog from "./Pages/Professional/ProfessionalBlog"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import BusinessBlog from "./Pages/Business/BusinessBlog"
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
       <Route exact path="/user-tomas" element={<TomasLau/>}/>
       <Route exact path="/freelance-blog" element={<FreelanceBlog/>}/>
       <Route exact path="/professional-blog" element={<ProfessionalBlog/>}/>
+      <Route exact path="/business-blog" element={<BusinessBlog/>}/>
       </Routes>
     
       <Footer/>
