@@ -18,10 +18,10 @@ const ProfessionalBlog = () => {
         <h1 className=" text-2xl font-bold">Popular</h1>
         <a href="#" className=" text-[#9B9B9B]">View all</a>
         </div>
-        <div className=" flex justify-between gap-4 items-center">
-        <div className=" rounded-2xl bg-[url('/Card.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" md:flex justify-between gap-4 items-center">
+        <div className=" rounded-2xl bg-[url('/Card.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -36,7 +36,7 @@ const ProfessionalBlog = () => {
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-7 h-[358px] ">
+        <div className="grid md:grid-cols-2 gap-7 md:h-[358px] ">
          <div className=" bg-white shadow-sm rounded-md shadow-gray-500">
           <div className=" p-8 font-semibold">
             <h1 className=" text-[#9B9B9B]">FREELANCING</h1>
@@ -67,14 +67,14 @@ const ProfessionalBlog = () => {
         </div>
 
         <div>
-        <div className="flex justify-between mt-20 mb-5">
-        <h1 className=" text-2xl font-bold">Essentials</h1>
+        <div className="flex justify-between mt-10 md:mt-20 mb-5">
+        <h1 className=" md:text-2xl font-bold">Essentials</h1>
         <a href="#" className=" text-[#9B9B9B]">View all</a>
         </div>
-        <div className=" flex justify-between gap-4 items-center">
-        <div className=" rounded-2xl bg-[url('/Card.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" md:flex justify-between gap-4 items-center">
+        <div className=" rounded-2xl bg-[url('/Card.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -89,7 +89,7 @@ const ProfessionalBlog = () => {
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-7 h-[358px] ">
+        <div className="grid md:grid-cols-2 gap-7 md:h-[358px] ">
          <div className=" bg-white shadow-sm rounded-md shadow-gray-500">
           <div className=" p-8 font-semibold">
             <h1 className=" text-[#9B9B9B]">FREELANCING</h1>
@@ -120,14 +120,14 @@ const ProfessionalBlog = () => {
         </div>
 
         <div>
-        <div className="flex justify-between mt-20 mb-5">
-        <h1 className=" text-2xl font-bold">Freelance</h1>
+        <div className=" md:flex justify-between mt-20 mb-5">
+        <h1 className=" md:text-2xl font-bold">Freelance</h1>
         <a href="#" className=" text-[#9B9B9B]">View all</a>
         </div>
-        <div className=" flex justify-between gap-4 items-center">
-        <div className=" rounded-2xl bg-[url('/Card.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" md:flex justify-between gap-4 items-center">
+        <div className=" rounded-2xl bg-[url('/Card.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -142,7 +142,7 @@ const ProfessionalBlog = () => {
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-7 h-[358px] ">
+        <div className="grid md:grid-cols-2 gap-7 md:h-[358px] ">
          <div className=" bg-white shadow-sm rounded-md shadow-gray-500">
           <div className=" p-8 font-semibold">
             <h1 className=" text-[#9B9B9B]">FREELANCING</h1>
@@ -174,7 +174,7 @@ const ProfessionalBlog = () => {
 
         <div>
           <div className=" flex justify-between">
-            <h1 className=" text-2xl font-bold mb-10">Reading lists</h1>
+            <h1 className=" md:text-2xl font-bold mb-10">Reading lists</h1>
             <a href="#" className=" text-[#FF5480]">View all</a>
           </div>
           <div>
@@ -214,12 +214,12 @@ const ProfessionalBlog = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-2 gap-3">
+        <div className=" grid md:grid-cols-2 gap-3">
           <div>
-          <div className=" mt-10">
+          <div className=" md:mt-10">
           <img className=" rounded-lg" src='/proslide1.png' alt='posts'/>
           </div>
-          <div className=" flex gap-5 py-1 ">
+          <div className=" md:flex gap-5 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-1">
               <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
@@ -233,10 +233,10 @@ const ProfessionalBlog = () => {
           <p className="text-[#9B9B9B] py-4 text-xs">User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.</p>
         </div>
           <div>
-          <div className=" mt-10">
+          <div className=" mt-5 md:mt-10">
           <img className=" rounded-lg" src='/proslide2.png' alt='posts'/>
           </div>
-          <div className=" flex gap-5 py-1 ">
+          <div className=" md:flex gap-5 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-1">
               <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
@@ -255,4 +255,4 @@ const ProfessionalBlog = () => {
   )
 }
 
-export default ProfessionalBlog
+export default ProfessionalBlog;

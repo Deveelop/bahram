@@ -7,27 +7,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
-import SwiperBtn from "../Porpular/SwiperBtn";
+import { useSwiper } from "swiper/react"
+import {FaChevronRight} from 'react-icons/fa'
 import MyTagsComponent from "./MyTagsComponent";
 import { CountArray } from "../../Components/countarray";
 import Newsteller from "../../Components/Newsteller";
+import MyCalendar from "../../Components/MyCalendar";
 const TomasLau = () => {
- 
+  const swiper = useSwiper();
   return (
     <>
       <div className=" w-[100%] bg-[#F9F9FB]  flex flex-col font-OpenSans">
         <HeaderUsers />
         <div className=" mb-20 pt-10 w-[75%] m-auto">
           <h6 className=" text-xs">
-            {" "}
-            <span className="text-[#C8C8C8]">Home</span> —{" "}
+            <span className="text-[#C8C8C8]">Home</span> —
             <span className="text-[#9B9B9B]">Tomas Laurinavicius</span>
           </h6>
-          <div className=" grid grid-cols-3 gap-4 mt-10">
-            <div className=" col-span-2">
-              <div className=" bg-[#FFFFFF] rounded-md  h-[315px] shadow-sm  shadow-gray-500 ">
+          <div className=" grid md:grid-cols-3 gap-4 mt-10">
+            <div className=" md:col-span-2">
+              <div className=" bg-[#FFFFFF] rounded-md w-[250px] md:w-[620px]  md:h-[315px] shadow-sm  shadow-gray-500 ">
                 <div className=" flex justify-center flex-col items-center w-full h-full gap-4">
-                  <div>
+                  <div className=" mt-8 md:mt-0">
                     <img
                       className="w-[50px] rounded-[50px]"
                       src="/profile1.png"
@@ -35,22 +36,22 @@ const TomasLau = () => {
                     />
                   </div>
                   <div className=" text-center">
-                    <h1 className=" text-[#111210] font-[18px]">
+                    <h1 className=" text-[#111210] text-[18px]">
                       TOMAS LAURINAVICIUS
                     </h1>
-                    <p className=" text-[#4A4A4A] font-[16px]">
+                    <p className=" text-[#4A4A4A] text-xs md:text-[16px]">
                       Hi, my name is Daniel, I'm the CTO here at Kinsta.
                     </p>
                   </div>
-                  <div className="flex justify-center gap-x-8 col-span-3 md:col-span-1 py-2 mt-8 md:mt-0">
+                  <div className="flex justify-center gap-x-4 md:gap-x-8 col-span-3 md:col-span-1 py-4 mt-4 md:mt-0">
                     <a
                       className=""
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Vk.png" />{" "}
+                     
+                      <img src="/Vk.png" />
                     </a>
                     <a
                       className=" "
@@ -58,8 +59,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Pinterest.png" />{" "}
+               
+                      <img src="/Pinterest.png" />
                     </a>
                     <a
                       className=""
@@ -67,8 +68,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Instagram.png" />{" "}
+                   
+                      <img src="/Instagram.png" />
                     </a>
                     <a
                       className=""
@@ -76,8 +77,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Twitter.png" />{" "}
+                   
+                      <img src="/Twitter.png" />
                     </a>
                     <a
                       className=" "
@@ -85,8 +86,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Facebook.png" />{" "}
+                      
+                      <img src="/Facebook.png" />
                     </a>
                   </div>
                 </div>
@@ -96,33 +97,33 @@ const TomasLau = () => {
                 {UserPostsArray.map((posts) => {
                   return (
                     <div className="" key={posts.id}>
-                      <div className=" mt-10">
-                        <img
+                      <div className=" w-[250px] md:w-[620px] mt-10">
+                        <img 
                           className=" rounded-lg"
                           src={posts.url}
                           alt={posts.id}
                         />
                       </div>
-                      <div className=" flex gap-10 py-1 ">
+                      <div className=" md:flex gap-10 py-1 ">
                         <span className=" flex text-nowrap gap-1 md:gap-3">
-                          <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">
+                          <label className=" text-xs md:text-sm font-semibold text-[#9B9B9B]">
                             BY
                           </label>
-                          <p className=" text-[#000000] text-sm  md:text-sm">
+                          <p className=" text-[#000000] text-xs  md:text-sm">
                             {posts.author}
                           </p>
                         </span>
                         <span className="flex text-nowrap gap-1 md:gap-3">
-                          <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">
-                            {" "}
+                          <label className=" text-xs md:text-sm font-semibold text-[#9B9B9B]">
+                           
                             IN
                           </label>
-                          <p className=" text-[#000000] text-sm md:text-sm">
+                          <p className=" text-[#000000] text-xs md:text-sm">
                             {posts.category}
                           </p>
                         </span>
                       </div>
-                      <div>
+                      <div className="w-[250px] md:w-[620px]">
                         <h1 className=" font-bold md:text-2xl">
                           {posts.title}
                         </h1>
@@ -131,21 +132,21 @@ const TomasLau = () => {
                   );
                 })}
               </div>
-              <div className=" mt-20">
+              <div className=" mt-20 w-[250px] md:w-[620px] ">
           <Swiper
                   modules={[Navigation]}
                   spaceBetween={1}
                   slidesPerView={3}
                   navigation={{ clickable: true}}
-                  onSlideChange={() => console.log("slide change")}
-                  onSwiper={(swiper) => console.log({ swiper })}
+                  className=""
+                 
                  
                 >
                   <div>
                     { CountArray.map((reads) => {
                       return (
                         <SwiperSlide key={reads.id} className="">
-                          <div className=" w-[79px] h-[79px] flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
+                          <div className=" md:w-[79px] w-[50px] h-[50px] md:h-[79px]  flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
                            <p>{reads.counts}</p>
                           </div>
                         </SwiperSlide>
@@ -156,11 +157,11 @@ const TomasLau = () => {
           </div>
             </div>
 
-            <div className=" col-span-1">
+            <div className=" md:col-span-1 w-[250px]">
               <div className=" ">
                 <form className="relative">
                   <input
-                    className=" focus:outline-none border-2 rounded-lg border-gray-200 h-[83px] w-[328px] placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1  text-ellipsis"
+                    className=" focus:outline-none border-2 rounded-lg border-gray-200 h-[83px] w-full placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1  text-ellipsis"
                     placeholder="Type something..."
                   />
 
@@ -183,7 +184,7 @@ const TomasLau = () => {
                     </div>
                     <div className="">
                       <p className=" text-[#9B9B9B]">DESIGN PROCES</p>
-                      <p className=" font-semibold">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         Our 15 favorite websites from August
                       </p>
                     </div>
@@ -199,7 +200,7 @@ const TomasLau = () => {
                     </div>
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">INSPIRATION</p>
-                      <p className=" font-semibold text-[#FF5480]">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         The beginners guide to user research
                       </p>
                     </div>
@@ -215,7 +216,7 @@ const TomasLau = () => {
                     </div>
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">INSPIRATION</p>
-                      <p className=" font-semibold">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         Web page layout 101: website anatomy every designer
                       </p>
                     </div>
@@ -228,7 +229,7 @@ const TomasLau = () => {
                   <div className=" pb-4 flex gap-4 ">
                     <div className="">
                       <p className=" text-[#9B9B9B]">DESIGN PROCES</p>
-                      <p className=" font-semibold">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         Our 15 favorite websites from August
                       </p>
                     </div>
@@ -237,7 +238,7 @@ const TomasLau = () => {
                   <div className=" pb-4 flex gap-4">
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">INSPIRATION</p>
-                      <p className=" font-semibold text-[#FF5480]">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         The beginners guide to user research
                       </p>
                     </div>
@@ -246,7 +247,7 @@ const TomasLau = () => {
                   <div className=" pb-4 flex gap-4">
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">INSPIRATION</p>
-                      <p className=" font-semibold">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         Web page layout 101: website anatomy every designer
                       </p>
                     </div>
@@ -254,7 +255,7 @@ const TomasLau = () => {
                   <div className=" flex gap-4">
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">FREELANCING</p>
-                      <p className=" font-semibold">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
                         10 essential sections to a high landing page
                       </p>
                     </div>
@@ -267,10 +268,10 @@ const TomasLau = () => {
                   <p className=" font-semibold">SUBSCRIBE</p>
                   <form className="flex justify-center">
                     <input
-                      className=" md:w-[160px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
+                      className=" md:w-[160px] w-[150px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
                       placeholder="Your email"
                     />
-                    <button className="   h-[50px] p-4 rounded-full md:rounded-[25px] bg-[#FF5480] text-white font-semibold md:text-sm -ml-16 shadow-sm shadow-gray-500">
+                    <button className=" h-[50px] p-4 rounded-full md:rounded-[25px] bg-[#FF5480] text-white font-semibold md:text-sm -ml-16 shadow-sm shadow-gray-500">
                       Subscribe
                     </button>
                   </form>
@@ -287,8 +288,7 @@ const TomasLau = () => {
                 >
                   <div>
                     {ReadingLists.map((reads) => {
-                      return (
-                        <SwiperSlide key={reads.id} className="">
+                      return  <SwiperSlide key={reads.id} className="">
                           <div className=" h-[225px]">
                             <img
                               className=" rounded-lg"
@@ -300,12 +300,14 @@ const TomasLau = () => {
                             </h1>
                           </div>
                         </SwiperSlide>
-                      );
+                      
                     })}
                   </div>
 
                   <div className=" z-50 absolute right-0">
-                    <SwiperBtn />
+                  <div className="  swiper-nav-btns">
+      <button className=" flex justify-center items-center md:w-[80px] w-[40px] h-[160px] md:h-[249px] bg-[#FFFFFF] shadow-sm shadow-gray-500 rounded-lg" onClick={() => swiper.slideNext() } ><FaChevronRight/></button>
+    </div>
                   </div>
                 </Swiper>
               </div>
@@ -363,8 +365,8 @@ const TomasLau = () => {
                 </div>
               </div>
 
-              <div className=" mt-5 bg-[#FFFFFF] h-[188px] border-2 rounded-lg border-gray-200">
-              calendar loading...
+              <div className=" mt-5 ">
+              <MyCalendar/>
               </div>
               <div className="  mt-5 bg-[#FFFFFF] h-[188px] border-2 rounded-lg border-gray-200">
                 <div className=" flex flex-col w-full h-full items-center justify-center gap-5">

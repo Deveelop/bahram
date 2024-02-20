@@ -18,12 +18,13 @@ const HeaderFreelance = () => {
         <Link to='/topics' className=' font-semibold'>Topics</Link>
     
       <div className='flex gap-8'>
-      <FaBars className=' md:hidden cursor-pointer'/>
+     
       <div className='w-[88px] h-[35px]  text-white text-center place-content-center flex items-center  rounded-lg bg-[#9283E0]'>
       <a href='#' className=' font-semibold'>Subscribe</a>
       </div>
       </div>
       </nav>
+      <FaBars className=' md:hidden cursor-pointer'/>
       </div>
       </div>
     </header>

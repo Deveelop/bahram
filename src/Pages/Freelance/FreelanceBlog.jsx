@@ -11,12 +11,12 @@ const FreelanceBlog = () => {
     <div className=" w-[100%] bg-[#F9F9FB]  flex flex-col font-OpenSans">
       <HeaderFreelance />
       <div className=" mb-20 pt-10 w-[75%] m-auto">
-        <div className=" grid grid-cols-3 gap-3">
-          <div className=" col-span-2">
+        <div className=" grid md:grid-cols-3 gap-3">
+          <div className=" md:col-span-2">
             <div className=" ">
               <img className=" rounded-lg" src="/u1.png" alt="utfiufe" />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -42,12 +42,12 @@ const FreelanceBlog = () => {
           <div className=" col-span-1 ">
             <div className=" ">
               <img
-                className=" h-[436px] rounded-lg"
+                className=" md:h-[436px] rounded-lg"
                 src="/dsb12.png"
                 alt="utfiufe"
               />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -71,16 +71,16 @@ const FreelanceBlog = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-3 gap-3 mt-10">
-          <div className=" col-span-1 ">
+        <div className=" grid md:grid-cols-3 gap-3 mt-10">
+          <div className=" md:col-span-1 ">
             <div className=" ">
               <img
-                className=" h-[436px] rounded-lg"
+                className=" md:h-[436px] rounded-lg"
                 src="/slide1.png"
                 alt="utfiufe"
               />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -103,15 +103,15 @@ const FreelanceBlog = () => {
             </div>
           </div>
 
-          <div className=" col-span-2">
+          <div className=" md:col-span-2">
             <div className=" ">
               <img
-                className=" w-full h-[436px] rounded-lg"
+                className=" md:w-full md:h-[436px] rounded-lg"
                 src="/dsb5.png"
                 alt="utfiufe"
               />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -135,12 +135,12 @@ const FreelanceBlog = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-3 gap-3 mt-10">
-          <div className=" col-span-2">
+        <div className=" grid md:grid-cols-3 gap-3 mt-10">
+          <div className=" md:col-span-2">
             <div className=" ">
               <img className=" rounded-lg" src="/u3.png" alt="utfiufe" />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -163,15 +163,15 @@ const FreelanceBlog = () => {
             </div>
           </div>
 
-          <div className=" col-span-1 ">
+          <div className=" md:col-span-1 ">
             <div className=" ">
               <img
-                className=" h-[436px] rounded-lg"
+                className=" md:h-[436px] rounded-lg"
                 src="/dsb2.png"
                 alt="utfiufe"
               />
             </div>
-            <div className=" flex gap-10 py-1 ">
+            <div className=" md:flex gap-10 py-1 ">
               <span className=" flex text-nowrap gap-1 md:gap-3">
                 <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">
                   BY
@@ -195,12 +195,12 @@ const FreelanceBlog = () => {
           </div>
         </div>
 
-        <div className=" mt-20">
-          <button className="  m-auto w-[200px] h-[70px] border-[2px] border-[#FF5480] flex justify-center items-center rounded-[35px] text-[#FF5480] font-semibold text-2xl ">
+        <div className=" md:mt-20 mt-10">
+          <button className="  m-auto md:w-[200px] w-[200px] h-[50px] md:h-[70px] border-[2px] border-[#FF5480] flex justify-center items-center rounded-[35px] text-[#FF5480] font-semibold md:text-2xl ">
             Load More
           </button>
         </div>
-        <div className=" mt-20 ">
+        <div className=" md:mt-20 mt-10 ">
           <h1 className=" text-center text-[28px] font-semibold">Instagram Stories</h1>
           <div>
             <Swiper
@@ -208,15 +208,13 @@ const FreelanceBlog = () => {
              
               spaceBetween={5}
               slidesPerView={8}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log({ swiper })}
           
             >
           
                 { InstaStories.map((reed)=>{
                  return   <SwiperSlide key={reed.id} className=" mt-10">
                      
-                        <img  className=" h-[240px] rounded-lg" src={reed.url} alt={reed.id}/>
+                        <img  className=" h-[100px] md:h-[240px] rounded-lg" src={reed.url} alt={reed.id}/>
                    
                     </SwiperSlide>
                  

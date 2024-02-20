@@ -18,13 +18,13 @@ const App = () => {
    <BrowserRouter>
      
       <Routes>
-      <Route exact path="/" element={<Posts/>}/>
+      <Route exact path="/" element={<TomasLau/>}/>
       <Route exact path="/porpular" element={<Porpular/>}/>
       <Route exact path="/new" element={<New/>}/>
       <Route exact path="/reading-lists" element={<ReadLists/>}/>
       <Route exact path="/topics" element={<Topics/>}/>
       <Route exact path="/posts-page" element={<PostsPage/>}/>
-      <Route exact path="/user-tomas" element={<TomasLau/>}/>
+      <Route exact path="/user-tomas" element={<Posts/>}/>
       <Route exact path="/freelance-blog" element={<FreelanceBlog/>}/>
       <Route exact path="/professional-blog" element={<ProfessionalBlog/>}/>
       <Route exact path="/business-blog" element={<BusinessBlog/>}/>

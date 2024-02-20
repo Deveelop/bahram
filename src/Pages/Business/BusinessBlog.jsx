@@ -14,11 +14,11 @@ const BusinessBlog = () => {
 
     <div className=" pb-20 w-[75%] m-auto flex flex-col gap-10">
         
-        <div className="grid grid-cols-3 mt-20">
+        <div className="grid md:grid-cols-3 mt-20">
 
-        <div className=" col-span-2 rounded-2xl bg-[url('/Card.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" md:col-span-2 rounded-2xl bg-[url('/Card.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -70,10 +70,6 @@ const BusinessBlog = () => {
         modules={[Navigation]} 
          spaceBetween={15}
          slidesPerView={4}
-        
-        
-         onSlideChange={()=> console.log('slide change')}
-         onSwiper={(swiper)=> console.log({swiper})}
          className="flex relative"
          >
           <div>
@@ -103,14 +99,14 @@ const BusinessBlog = () => {
         </div>
 
         <div>
-        <div className="flex justify-between mt-20 mb-5">
-        <h1 className=" text-2xl font-bold">Popular</h1>
+        <div className="flex justify-between md:mt-20 mb-5">
+        <h1 className=" md:text-2xl font-bold">Popular</h1>
         <a href="#" className=" text-[#9B9B9B]">View all</a>
         </div>
-        <div className=" flex justify-between gap-4 items-center">
-        <div className=" rounded-2xl bg-[url('/Card.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" md:flex justify-between gap-4 items-center">
+        <div className=" rounded-2xl bg-[url('/Card.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -125,7 +121,7 @@ const BusinessBlog = () => {
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-7 h-[358px] ">
+        <div className="grid md:grid-cols-2 gap-7 md:h-[358px] ">
          <div className=" bg-white shadow-sm rounded-md shadow-gray-500">
           <div className=" p-8 font-semibold">
             <h1 className=" text-[#9B9B9B]">FREELANCING</h1>
@@ -156,13 +152,13 @@ const BusinessBlog = () => {
         </div>
 
          <div>
-            <h1>Random</h1>
+            <h1 className=" font-bold md:text-2xl">Random</h1>
         <div className=" pt-10 grid md:mb-10">
            
 
               <div className="bg-[#FFFFFF] shadow-sm shadow-gray-500 items-center grid md:grid-cols-2 rounded-lg">
                 <div className=" ">
-                <div className=" flex gap-5 ">
+                <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -184,13 +180,13 @@ const BusinessBlog = () => {
 
 
           <div>
-        <div className="flex justify-between mt-20 mb-5">
+        <div className=" flex justify-between mt-20 mb-5">
         <h1 className=" text-2xl font-bold">Essentials</h1>
         <a href="#" className=" text-[#9B9B9B]">View all</a>
         </div>
-        <div className=" flex justify-between gap-4 items-center">
+        <div className=" md:flex justify-between gap-4 items-center">
 
-        <div className="grid grid-cols-2 gap-7 h-[358px] ">
+        <div className="grid md:grid-cols-2 gap-7 md:h-[358px] ">
          <div className=" bg-white shadow-sm rounded-md shadow-gray-500">
           <div className=" p-8 font-semibold">
             <h1 className=" text-[#9B9B9B]">FREELANCING</h1>
@@ -217,9 +213,9 @@ const BusinessBlog = () => {
          </div>
         </div>
 
-        <div className=" rounded-2xl bg-[url('/Card1.png')] w-[573px] bg-cover bg-no-repeat bg-center h-[368px] flex justify-center flex-col ">
+        <div className=" rounded-2xl bg-[url('/Card1.png')] md:w-[573px] bg-cover bg-no-repeat bg-center md:h-[368px] flex justify-center flex-col ">
         <div className="p-8">
-        <div className=" flex gap-5 ">
+        <div className=" md:flex gap-5 ">
             <span className=" flex text-nowrap gap-1 md:gap-2">
               <label className=" text-xs md:text-xs font-semibold text-[#FFFFFF]">BY</label><p className=" text-[#FFFFFF] text-xs  md:text-xs">TOMAS LAURINAVICIUS</p>
             </span>
@@ -233,18 +229,15 @@ const BusinessBlog = () => {
         </div>
         </div>
         </div>
-
-       
-
         </div>
         </div>
 
-        <div className=" grid grid-cols-2 gap-3">
+        <div className=" grid md:grid-cols-2 md:gap-3">
           <div>
-          <div className=" mt-10">
+          <div className=" md:mt-10">
           <img className=" rounded-lg" src='/chap1.png' alt='posts'/>
           </div>
-          <div className=" flex gap-5 py-1 ">
+          <div className=" md:flex gap-5 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-1">
               <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
@@ -261,7 +254,7 @@ const BusinessBlog = () => {
           <div className=" mt-10">
           <img className=" rounded-lg" src='/business2.png' alt='posts'/>
           </div>
-          <div className=" flex gap-5 py-1 ">
+          <div className=" md:flex gap-5 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-1">
               <label className=" text-xs md:text-xs font-semibold text-[#9B9B9B]">BY</label><p className=" text-[#000000] text-xs  md:text-xs">TOMAS LAURINAVICUS</p>
             </span>
@@ -284,4 +277,4 @@ const BusinessBlog = () => {
   )
 }
 
-export default BusinessBlog
+export default BusinessBlog;
