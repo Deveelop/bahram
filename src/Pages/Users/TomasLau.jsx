@@ -13,7 +13,7 @@ import { CountArray } from "../../Components/countarray";
 import Newsteller from "../../Components/Newsteller";
 import MyCalendar from "../../Components/MyCalendar";
 const TomasLau = () => {
- 
+  
   return (
     <>
       <div className=" w-[100%] bg-[#F9F9FB]  flex flex-col font-OpenSans">
@@ -23,9 +23,10 @@ const TomasLau = () => {
             <span className="text-[#C8C8C8]">Home</span> —
             <span className="text-[#9B9B9B]">Tomas Laurinavicius</span>
           </h6>
-          <div className=" grid md:grid-cols-3 gap-4 mt-10">
-            <div className=" md:col-span-2">
-              <div className=" bg-[#FFFFFF] rounded-md w-[250px] md:w-[620px]  md:h-[315px] shadow-sm  shadow-gray-500 ">
+          <div className=" md:grid md:grid-cols-3 gap-4 mt-10">
+           
+            <div className=" md:col-span-2 mb-10">
+              <div className=" bg-[#FFFFFF] rounded-md h-[315px] shadow-sm  shadow-gray-500 ">
                 <div className=" flex justify-center flex-col items-center w-full h-full gap-4">
                   <div className=" mt-8 md:mt-0">
                     <img
@@ -96,14 +97,14 @@ const TomasLau = () => {
                 {UserPostsArray.map((posts) => {
                   return (
                     <div className="" key={posts.id}>
-                      <div className=" w-[250px] md:w-[620px] mt-10">
+                      <div className=" mt-10">
                         <img 
                           className=" rounded-lg"
                           src={posts.url}
                           alt={posts.id}
                         />
                       </div>
-                      <div className=" md:flex gap-10 py-1 ">
+                      <div className=" flex gap-10 py-1 ">
                         <span className=" flex text-nowrap gap-1 md:gap-3">
                           <label className=" text-xs md:text-sm font-semibold text-[#9B9B9B]">
                             BY
@@ -122,7 +123,7 @@ const TomasLau = () => {
                           </p>
                         </span>
                       </div>
-                      <div className="w-[250px] md:w-[620px]">
+                      <div className="">
                         <h1 className=" font-bold md:text-2xl">
                           {posts.title}
                         </h1>
@@ -131,7 +132,7 @@ const TomasLau = () => {
                   );
                 })}
               </div>
-              <div className=" mt-20 w-[250px] ">
+              <div className=" mt-20 ">
           <Swiper
                   modules={[Navigation]}
                   spaceBetween={1}
@@ -145,7 +146,7 @@ const TomasLau = () => {
                     { CountArray.map((reads) => {
                       return (
                         <SwiperSlide key={reads.id} className="">
-                          <div className=" md:w-[79px] w-[50px] h-[50px] md:h-[79px]  flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
+                          <div className=" md:w-[79px] w-[50px] h-[50px]  md:h-[79px]  flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
                            <p>{reads.counts}</p>
                           </div>
                         </SwiperSlide>
@@ -154,9 +155,10 @@ const TomasLau = () => {
                   </div>
                 </Swiper>
           </div>
+           
             </div>
 
-            <div className=" md:col-span-1 ">
+            <div className=" col-span-1 ">
               <div className=" ">
                 <form className="relative">
                   <input
@@ -164,7 +166,7 @@ const TomasLau = () => {
                     placeholder="Type something..."
                   />
 
-                  <FaSearch className="  absolute top-8 right-0" />
+                  <FaSearch className="  absolute top-8 right-0 mr-10" />
                 </form>
               </div>
 
@@ -267,7 +269,7 @@ const TomasLau = () => {
                   <p className=" font-semibold">SUBSCRIBE</p>
                   <form className="flex justify-center">
                     <input
-                      className=" md:w-[160px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
+                      className=" md:w-[160px] w-[150px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
                       placeholder="Your email"
                     />
                     <button className="   h-[50px] p-4 rounded-full md:rounded-[25px] bg-[#FF5480] text-white font-semibold md:text-sm -ml-16 shadow-sm shadow-gray-500">
@@ -281,8 +283,7 @@ const TomasLau = () => {
                   modules={[Navigation]}
                   spaceBetween={15}
                   slidesPerView={1.6}
-                  onSlideChange={() => console.log("slide change")}
-                  onSwiper={(swiper) => console.log({ swiper })}
+                 
                   className="flex relative"
                 >
                   <div>
@@ -303,8 +304,8 @@ const TomasLau = () => {
                     })}
                   </div>
 
-                  <div className=" z-50 absolute right-0">
-                    <SwiperBtn />
+                  <div className=" z-50 absolute right-0 w-[80px] md:h-[205px] h-[160px]">
+                  <SwiperBtn/>
                   </div>
                 </Swiper>
               </div>
@@ -319,8 +320,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Vk.png" />{" "}
+                    
+                      <img src="/Vk.png" />
                     </a>
                     <a
                       className=" "
@@ -328,8 +329,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Pinterest.png" />{" "}
+                      
+                      <img src="/Pinterest.png" />
                     </a>
                     <a
                       className=""
@@ -337,8 +338,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Instagram.png" />{" "}
+                    
+                      <img src="/Instagram.png" />
                     </a>
                     <a
                       className=""
@@ -346,8 +347,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Twitter.png" />{" "}
+                    
+                      <img src="/Twitter.png" />
                     </a>
                     <a
                       className=" "
@@ -355,8 +356,8 @@ const TomasLau = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {" "}
-                      <img src="/Facebook.png" />{" "}
+                    
+                      <img src="/Facebook.png" />
                     </a>
                   </div>
                 </div>
