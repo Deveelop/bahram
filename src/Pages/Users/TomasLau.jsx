@@ -7,14 +7,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
-import { useSwiper } from "swiper/react"
-import {FaChevronRight} from 'react-icons/fa'
+import SwiperBtn from "../Porpular/SwiperBtn";
 import MyTagsComponent from "./MyTagsComponent";
 import { CountArray } from "../../Components/countarray";
 import Newsteller from "../../Components/Newsteller";
 import MyCalendar from "../../Components/MyCalendar";
 const TomasLau = () => {
-  const swiper = useSwiper();
+ 
   return (
     <>
       <div className=" w-[100%] bg-[#F9F9FB]  flex flex-col font-OpenSans">
@@ -132,7 +131,7 @@ const TomasLau = () => {
                   );
                 })}
               </div>
-              <div className=" mt-20 w-[250px] md:w-[620px] ">
+              <div className=" mt-20 w-[250px] ">
           <Swiper
                   modules={[Navigation]}
                   spaceBetween={1}
@@ -157,7 +156,7 @@ const TomasLau = () => {
           </div>
             </div>
 
-            <div className=" md:col-span-1 w-[250px]">
+            <div className=" md:col-span-1 ">
               <div className=" ">
                 <form className="relative">
                   <input
@@ -247,7 +246,7 @@ const TomasLau = () => {
                   <div className=" pb-4 flex gap-4">
                     <div className=" ">
                       <p className=" text-[#9B9B9B]">INSPIRATION</p>
-                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer">
+                      <p className=" font-semibold hover:text-[#FF5480] cursor-pointer ">
                         Web page layout 101: website anatomy every designer
                       </p>
                     </div>
@@ -268,10 +267,10 @@ const TomasLau = () => {
                   <p className=" font-semibold">SUBSCRIBE</p>
                   <form className="flex justify-center">
                     <input
-                      className=" md:w-[160px] w-[150px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
+                      className=" md:w-[160px] h-[50px] rounded-[25px] bg-[#FFFFFF] focus:border-transparent focus:outline-none focus:shadow-lg  placeholder:font-OpenSans placeholder:text-base pl-6 placeholder:pl-1 shadow-sm shadow-gray-500 "
                       placeholder="Your email"
                     />
-                    <button className=" h-[50px] p-4 rounded-full md:rounded-[25px] bg-[#FF5480] text-white font-semibold md:text-sm -ml-16 shadow-sm shadow-gray-500">
+                    <button className="   h-[50px] p-4 rounded-full md:rounded-[25px] bg-[#FF5480] text-white font-semibold md:text-sm -ml-16 shadow-sm shadow-gray-500">
                       Subscribe
                     </button>
                   </form>
@@ -305,9 +304,7 @@ const TomasLau = () => {
                   </div>
 
                   <div className=" z-50 absolute right-0">
-                  <div className="  swiper-nav-btns">
-      <button className=" flex justify-center items-center md:w-[80px] w-[40px] h-[160px] md:h-[249px] bg-[#FFFFFF] shadow-sm shadow-gray-500 rounded-lg" onClick={() => swiper.slideNext() } ><FaChevronRight/></button>
-    </div>
+                    <SwiperBtn />
                   </div>
                 </Swiper>
               </div>
