@@ -26,7 +26,7 @@ const New = () => {
           <div className=" mt-10">
           <img className=" rounded-lg" src={posts.url} alt={posts.id}/>
           </div>
-          <div className=" flex gap-10 py-1 ">
+          <div className=" md:flex gap-10 py-1 ">
             <span className=" flex text-nowrap gap-1 md:gap-3">
               <label className=" text-sm md:text-sm font-semibold text-[#9B9B9B]">BY</label><Link to='/user-tomas'><p className=" text-[#000000] text-sm  md:text-sm">{posts.author}</p></Link>
             </span>
@@ -56,9 +56,11 @@ const New = () => {
         }
        </div>
      </div>
-     <div className=" mt-20">
-       <button className="  m-auto w-[200px] h-[70px] border-[2px] border-[#FF5480] flex justify-center items-center rounded-[35px] text-[#FF5480] font-semibold text-2xl ">Load More</button>
-     </div>
+     <div className=" md:mt-20 mt-10">
+          <button className="  m-auto md:w-[200px] w-[200px] h-[50px] md:h-[70px] border-[2px] border-[#FF5480] flex justify-center items-center rounded-[35px] text-[#FF5480] font-semibold md:text-2xl ">
+            Load More
+          </button>
+        </div>
      </div>
      <Newsteller/>
      </div>

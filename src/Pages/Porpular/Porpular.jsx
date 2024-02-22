@@ -57,12 +57,12 @@ const Porpular = () => {
          })
         }
         </div>
-        <div>
+        <div className=" mt-10">
           <div className=" flex justify-between">
             <h1 className=" text-2xl font-bold">Reading lists</h1>
             <a href="#" className=" text-[#FF5480]">View all</a>
           </div>
-          <div>
+          <div className=" mt-5">
           <Swiper
         modules={[Navigation]} 
          spaceBetween={15}
@@ -91,7 +91,7 @@ const Porpular = () => {
          
           
           
-          <div className=" z-50 absolute right-0">
+          <div className=" z-50 absolute right-0 h-[60px]">
           <SwiperBtn />
           </div>
         

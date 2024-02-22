@@ -1,11 +1,16 @@
+
 import { PostsArray } from "../../Components/postsarray"
 import HeaderPersonal from "./HeaderPersonal"
 import Newsteller from "../../Components/Newsteller"
+
 const Posts = () => {
+  
   return (
     <>
     <div className=" w-[100%] bg-[#F9F9FB]  flex flex-col font-OpenSans">
     <HeaderPersonal/>
+
+   
      {
       PostsArray.map( (posts) => {
         return <div className=" w-[75%]  m-auto" key={posts.id}>
