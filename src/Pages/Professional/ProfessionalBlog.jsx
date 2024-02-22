@@ -182,10 +182,6 @@ const ProfessionalBlog = () => {
         modules={[Navigation]} 
          spaceBetween={15}
          slidesPerView={4}
-        
-        
-         onSlideChange={()=> console.log('slide change')}
-         onSwiper={(swiper)=> console.log({swiper})}
          className="flex relative"
          >
           <div>
@@ -206,7 +202,7 @@ const ProfessionalBlog = () => {
          
           
           
-          <div className=" z-50 absolute right-0">
+          <div className=" z-50 absolute right-0 w-[60px] md:h-[300px] h-[60px]">
           <SwiperBtn />
           </div>
         

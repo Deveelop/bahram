@@ -67,10 +67,6 @@ const Porpular = () => {
         modules={[Navigation]} 
          spaceBetween={15}
          slidesPerView={4}
-        
-        
-         onSlideChange={()=> console.log('slide change')}
-         onSwiper={(swiper)=> console.log({swiper})}
          className="flex relative"
          >
           <div>
@@ -91,7 +87,7 @@ const Porpular = () => {
          
           
           
-          <div className=" z-50 absolute right-0 h-[60px]">
+          <div className=" z-50 absolute right-0 w-[50px] md:h-[300px] h-[60px]">
           <SwiperBtn />
           </div>
         
