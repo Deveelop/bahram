@@ -51,9 +51,9 @@ const HeaderPorpular = () => {
 
                 <ul>
                     <li className='flex flex-col border-b-2 border-gray-400 text-white'>
-                       <Link to='/business-blog'>Business Blog</Link>
-                       <Link to='/professional-blog'>Professsional Blog</Link>
-                       <Link to='/freelance-blog'>Freelance Blog</Link>
+                       <Link to='/business-blog' className='ml-3'>Business Blog</Link>
+                       <Link to='/professional-blog'  className='ml-3'>Professsional Blog</Link>
+                       <Link to='/freelance-blog'  className='ml-3'>Freelance Blog</Link>
                     </li>
 
                     <Link to='/porpular' className='flex flex-col text-white'>

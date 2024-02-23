@@ -84,7 +84,7 @@ const Porpular = () => {
             return <SwiperSlide key={reads.id} className="">
             
                <div className=" flex flex-col text-center ">
-                <img className=" md:h-[225px] h rounded-lg" src={reads.url} alt={reads.id}/>
+                <img className=" md:h-[225px] rounded-lg" src={reads.url} alt={reads.id}/>
                <h1 className="  md:text-lg font-semibold">{reads.title}</h1>
                </div>
                </SwiperSlide>
@@ -97,7 +97,7 @@ const Porpular = () => {
           <SwiperSlide />
          
           
-          <div slot=" " className=" z-50 absolute  top-0 bottom-0 right-0 w-[50px] md:h-[220px] h-[190px]">
+          <div slot=" " className=" z-50 absolute  top-0 bottom-0 right-0 w-[50px] md:h-[220px] h-[160px]">
           <SwiperBtn />
           </div>
         

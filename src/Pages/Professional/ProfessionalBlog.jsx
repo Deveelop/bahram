@@ -180,8 +180,11 @@ const ProfessionalBlog = () => {
           <div>
           <Swiper
         modules={[Navigation]} 
-         spaceBetween={15}
-         slidesPerView={4}
+        breakpoints={{
+          640: { slidesPerView: 4.6 },
+        }} 
+        slidesPerView={1.6} 
+        spaceBetween={15}
          className="flex relative"
          >
           <div>
@@ -189,9 +192,9 @@ const ProfessionalBlog = () => {
            ReadingLists.map((reads)=>{
             return <SwiperSlide key={reads.id} className="">
             
-               <div className=" h-[225px]">
-                <img className=" rounded-lg" src={reads.url} alt={reads.id}/>
-               <h1 className=" text-center font-semibold">{reads.title}</h1>
+               <div className=" flex flex-col text-center">
+                <img className="  md:h-[225px] rounded-lg" src={reads.url} alt={reads.id}/>
+               <h1 className=" font-semibold">{reads.title}</h1>
                </div>
                </SwiperSlide>
            
@@ -202,7 +205,7 @@ const ProfessionalBlog = () => {
          
           
           
-          <div className=" z-50 absolute right-0 w-[60px] md:h-[300px] h-[60px]">
+          <div className=" z-50 absolute right-0 w-[50px] md:h-[220px] h-[160px]">
           <SwiperBtn />
           </div>
         
