@@ -70,9 +70,12 @@ const Porpular = () => {
               </div>
               <div className=" mt-5">
           <Swiper
-        modules={[Navigation]} 
-         spaceBetween={15}
-         slidesPerView={4.3}
+        modules={[Navigation]}
+        breakpoints={{
+          640: { slidesPerView: 4.6 },
+        }} 
+        slidesPerView={1.6}
+        spaceBetween={15}
          className=" flex"
          >
         
