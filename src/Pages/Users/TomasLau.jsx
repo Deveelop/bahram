@@ -304,7 +304,7 @@ const TomasLau = () => {
                     })}
                   </div>
                   <SwiperSlide/>
-                  <div className=" z-50 absolute right-0 w-[80px] md:h-[210px] h-[160px]">
+                  <div className=" z-50 absolute right-0 w-[80px] md:h-[210px] h-[155px]">
                   <SwiperBtn/>
                   </div>
                 </Swiper>

@@ -97,7 +97,7 @@ const Porpular = () => {
           <SwiperSlide />
          
           
-          <div slot=" " className=" z-50 absolute  top-0 bottom-0 right-0 w-[50px] md:h-[300px] h-[260px]">
+          <div slot=" " className=" z-50 absolute  top-0 bottom-0 right-0 w-[50px] md:h-[220px] h-[155px]">
           <SwiperBtn />
           </div>
         
