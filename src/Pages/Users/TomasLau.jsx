@@ -104,7 +104,7 @@ const TomasLau = () => {
                           alt={posts.id}
                         />
                       </div>
-                      <div className=" flex gap-10 py-1 ">
+                      <div className=" md:flex gap-10 py-1 ">
                         <span className=" flex text-nowrap gap-1 md:gap-3">
                           <label className=" text-xs md:text-sm font-semibold text-[#9B9B9B]">
                             BY
@@ -146,8 +146,8 @@ const TomasLau = () => {
                     { CountArray.map((reads) => {
                       return (
                         <SwiperSlide key={reads.id} className="">
-                          <div className=" md:w-[79px] w-[50px] h-[50px]  md:h-[79px]  flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
-                           <p>{reads.counts}</p>
+                          <div className=" md:w-[79px] w-[30px] h-[30px]  md:h-[79px]  flex justify-center items-center rounded-full bg-[#F1F1F1] hover:bg-[#FF5480] hover:text-white">
+                           <p className=" text-xs md:text-lg">{reads.counts}</p>
                           </div>
                         </SwiperSlide>
                       );
@@ -303,7 +303,7 @@ const TomasLau = () => {
                       
                     })}
                   </div>
-
+                  <SwiperSlide/>
                   <div className=" z-50 absolute right-0 w-[80px] md:h-[210px] h-[160px]">
                   <SwiperBtn/>
                   </div>

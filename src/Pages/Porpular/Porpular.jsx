@@ -72,25 +72,17 @@ const Porpular = () => {
           <Swiper
         modules={[Navigation]} 
          spaceBetween={15}
-         breakpoints={{
-          640: { 
-            slidesPerView: 3,
-          },
-          480: {
-            slidesPerView: 2
-          }
-
-          }}
+         slidesPerView={4.3}
          className=" flex"
          >
-          <span className="  " >
+        
          {
            ReadingLists.map((reads)=>{
             return <SwiperSlide key={reads.id} className="">
             
-               <div className=" md:h-[225px]">
-                <img className=" rounded-lg" src={reads.url} alt={reads.id}/>
-               <h1 className=" text-center md:text-lg font-semibold">{reads.title}</h1>
+               <div className=" flex flex-col text-center ">
+                <img className=" md:h-[225px] h rounded-lg" src={reads.url} alt={reads.id}/>
+               <h1 className="  md:text-lg font-semibold">{reads.title}</h1>
                </div>
                </SwiperSlide>
 
@@ -98,9 +90,9 @@ const Porpular = () => {
            
            })
          }
-         </span>
+        
+          <SwiperSlide />
          
-          <SwiperSlide className=" bg-white"></SwiperSlide>
           
           <div slot=" " className=" z-50 absolute  top-0 bottom-0 right-0 w-[50px] md:h-[300px] h-[260px]">
           <SwiperBtn />
